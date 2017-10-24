@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        >
+
+        <ImageView
+            android:id="@+id/capture_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/temp_user"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/content_description"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/camera"
+            android:layout_marginTop="36dp"
+            android:layout_alignTop="@+id/capture_image"
+            android:layout_alignStart="@+id/capture_image"
+            android:layout_marginStart="38dp"
+            android:id="@+id/imageView2"
+            android:contentDescription="@string/content_description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:weightSum="3"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout2">
+
+            <EditText
+                android:id="@+id/et_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/login_et_left_padding"
+                android:drawableStart="@drawable/temp_icon_profile"
+                android:hint="@string/first_name"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/edtxt_padding"
+                android:textSize="16sp"
+                />
+
+            <EditText
+                android:id="@+id/et_login_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/login_et_left_padding"
+                android:drawableStart="@drawable/temp_icon_profile"
+                android:hint="@string/last_name"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/edtxt_padding"
+                android:textSize="16sp"
+                />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_emial_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:drawablePadding="@dimen/login_et_left_padding"
+            android:drawableStart="@drawable/temp_icon_profile"
+            android:hint="@string/email_id"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/edtxt_padding"
+            android:textSize="16sp"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/login_et_left_padding"
+            android:drawableStart="@drawable/temp_icon_profile"
+            android:hint="@string/password"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/edtxt_padding"
+            android:textSize="16sp"
+            android:layout_below="@+id/et_emial_id"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp" />
+
+        <EditText
+            android:id="@+id/et_comfirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/login_et_left_padding"
+            android:drawableStart="@drawable/temp_icon_profile"
+            android:hint="@string/confirm_password"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/edtxt_padding"
+            android:layout_below="@+id/et_password"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp" />
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_corner_bt"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/action_sign_up"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="39dp"
+            android:layout_below="@+id/et_comfirm_password"
+            android:layout_alignParentStart="true" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_signin"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_login"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/already_registered"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>
